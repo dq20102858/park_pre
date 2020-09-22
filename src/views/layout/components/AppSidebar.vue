@@ -147,7 +147,7 @@ export default {
         },
         {
           id: 8,
-          moduleAction: "",
+          moduleAction: "users",
           moduleIcon: "monitor",
           moduleName: "人员管理",
           isChildren: 0,
@@ -155,7 +155,7 @@ export default {
         },
         {
           id: 9,
-          moduleAction: "message",
+          moduleAction: "",
           moduleIcon: "monitor",
           moduleName: "系统配置",
           isChildren: 0,

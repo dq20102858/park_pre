@@ -172,7 +172,7 @@ export default {
   margin-bottom: 30px;
 }
 .login-container .el-input-group__prepend {
-  border: 1px #4b6eca solid;
+  border: 1px #0B64B4 solid;
   background: #fff;
   padding: 0 5px;
   border-right: 0;

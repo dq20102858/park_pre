@@ -52,6 +52,17 @@ const constantRouterMap = [
         component: () => import('@/views/message/index')
       },
     ]
+  },
+  {
+    path: '/users',
+    component: Layout,
+    hidden: true,
+    children: [
+      {
+        path: '/users',
+        component: () => import('@/views/users/index')
+      },
+    ]
   }
 ]
 export { constantRouterMap }
