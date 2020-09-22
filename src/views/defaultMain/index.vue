@@ -285,11 +285,11 @@ export default {
   margin-bottom: 10px;
 }
 .app-rows .heighta {
-  height: 450px;
+  height: 380px;
 }
 .app-rows .heighta img {
-  width: 100%;
-  max-height: 360px;
+  max-width: 100%;
+  height: 300px;
 }
 .app-rows .heightb {
   height: 330px;
