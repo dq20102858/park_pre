@@ -1,0 +1,38 @@
+.app-sidebar-container{position:fixed;top:0;bottom:0;left:0;z-index:1001;overflow:hidden;width:180px!important;height:100%;font-size:0;transition:width .28s}
+.scrollbar-wrapper{background:#0b64b4;height:calc(100% + 17px);overflow-x: hidden;}
+.el-scrollbar__view{height:100%}
+
+.app-menu{width:100%!important;border:none;background:none;}
+.app-menu .slogo{text-align:center;}
+.app-menu .slogo img{margin-top:20px;margin-bottom:50px;width:80px;text-align:center;}
+.app-menu .el-submenu__title .img{width:24px;vertical-align:middle;}
+.app-menu .el-submenu__title .imgon{display:none;width:24px;vertical-align:middle;}
+.app-menu .el-submenu__title .span{padding-left:10px;color:#fff;font-weight:700;font-style:normal;font-size:15px;}
+.app-menu .el-submenu__title:hover{background:#fff;}
+.app-menu .el-submenu__title:hover .span{color:#0b64b4;}
+.app-menu .el-submenu__title:hover .img{display:none;}
+.app-menu .el-submenu__title:hover .imgon{display:inline-block;}
+.app-menu .el-menu-item .img{width:24px;vertical-align:middle;}
+.app-menu .el-menu-item .imgon{display:none;width:24px;vertical-align:middle;}
+.app-menu .el-menu-item .span{padding-left:10px;color:#fff;font-weight:700;font-style:normal;font-size:15px;}
+  /* focus */
+.app-menu .el-menu-item:focus {background: #fff}
+.app-menu .el-menu-item:focus .span {color: #0b64b4;}
+.app-menu .el-menu-item:focus .img {display: none;}
+.app-menu .el-menu-item:focus .imgon {display: inline-block;}
+  /* hover */
+.app-menu .el-menu-item:hover {background: #fff; }
+.app-menu .el-menu-item:hover .img {display: none;}
+.app-menu .el-menu-item:hover .imgon {display: inline-block;}
+.app-menu .el-menu-item:hover .span {color: #0b64b4;}
+  /* is-active */
+.app-menu .is-active{background:#fff!important;}
+.app-menu .is-active .img {display: none;}
+.app-menu .is-active .imgon {display: inline-block;}
+.app-menu .is-active  .span{color:#0b64b4;}
+  /* hideSidebar */
+.hideSidebar .app-sidebar-container {width: 66px !important;}
+.hideSidebar .app-main-container {margin-left: 66px; }     
+.hideSidebar .app-menu .el-menu-item  .span{display: none!important}
+.hideSidebar .app-menu .el-submenu__title  .span{display: none!important}
+.hideSidebar .app-menu .slogo img {text-align: center;width: 50px;margin-top: 10px;margin-bottom:20px;}
