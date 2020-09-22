@@ -46,7 +46,7 @@
 </template>
 <script>
 // import { isvalidUsername } from '@/utils/validate'
-import { loginByUsername } from "@/api/login/login";
+import { loginByUsername } from "@/store/login";
 export default {
   name: "login",
   data() {

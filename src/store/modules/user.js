@@ -1,4 +1,4 @@
-import { loginByUsername, logout, getUserInfo } from '@/api/login/login'
+import { loginByUsername, logout, getUserInfo } from '@/store/login'
 import {
   getToken,
   setToken,

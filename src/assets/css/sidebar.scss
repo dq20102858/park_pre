@@ -15,6 +15,10 @@
 .app-menu .el-menu-item .img{width:24px;vertical-align:middle;}
 .app-menu .el-menu-item .imgon{display:none;width:24px;vertical-align:middle;}
 .app-menu .el-menu-item .span{padding-left:10px;color:#fff;font-weight:700;font-style:normal;font-size:15px;}
+.el-menu--popup{min-width: 120px;margin:  0;}
+.el-menu--popup .el-menu--popup{padding: 0;}
+.el-menu--popup .el-menu-item-group__title{padding:0!important;}
+.el-menu--popup .el-menu-item{height: 44px;line-height: 44px; text-align: center;}
   /* focus */
 .app-menu .el-menu-item:focus {background: #fff}
 .app-menu .el-menu-item:focus .span {color: #0b64b4;}

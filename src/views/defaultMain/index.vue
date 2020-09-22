@@ -168,7 +168,7 @@
                 <div class="gtitle">人脸识别</div>
                 <div class="hqt-users">
                   <div class="item">
-                    <img class="img2" :src="require('@/assets/image/user.png')" />
+                    <img  :src="require('@/assets/image/user.png')" />
                     <em>小灰灰</em>
                     <span>1分钟</span>
                   </div>
@@ -288,7 +288,8 @@ export default {
   height: 450px;
 }
 .app-rows .heighta img {
-  height: 380px;
+  width: 100%;
+  max-height: 360px;
 }
 .app-rows .heightb {
   height: 330px;

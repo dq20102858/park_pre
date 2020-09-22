@@ -16,11 +16,12 @@
           @click.native="activeSel($event,item.moduleAction)"
           v-if="item.isChildren==0"
           :key="item.id"
-          :index="item.moduleAction" :title="item.moduleName"
+          :index="item.moduleAction"
+          :title="item.moduleName"
         >
           <img class="img" :src="require('@/assets/image/m_'+item.moduleIcon+'.png')" />
           <img class="imgon" :src="require('@/assets/image/m_'+item.moduleIcon+'_on.png')" />
-          <em  class="span">{{item.moduleName}}</em>
+          <em class="span">{{item.moduleName}}</em>
         </el-menu-item>
         <el-submenu v-if="item.isChildren==1" :key="item.id" :index="item.moduleAction">
           <template slot="title">
@@ -29,7 +30,7 @@
             <em class="span">{{item.moduleName}}</em>
           </template>
           <el-menu-item-group>
-            <el-menu-item
+            <el-menu-item  class="app-menu-group"
               v-for="items in item.children"
               :key="items.id"
               :index="items.modulePath"
@@ -51,8 +52,6 @@ export default {
     return {
       activeIndex: "defaultMain",
       isCollapse: true,
-      isCollapseOpen: sessionStorage.getItem("activeMenu"),
-      isAct: 0,
       moduleMenu: [
         {
           id: 1,
@@ -166,10 +165,9 @@ export default {
     };
   },
   mounted() {
-    this.isAct = sessionStorage.getItem("activeMenu");
     let start = window.location.href.lastIndexOf("/");
     let path = window.location.href.slice(start + 1);
-    console.log(path + "_" + this.activeIndex + "_" + this.isAct);
+    console.log(path + "_" + this.activeIndex);
     this.activeIndex = path;
   },
   methods: {
@@ -179,8 +177,6 @@ export default {
       } else {
         this.activeIndex = url;
       }
-
-      //   this.isActive = !this.isActive;
     }
   }
 };
