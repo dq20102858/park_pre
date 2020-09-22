@@ -67,7 +67,7 @@
                 <button @click="pageToLast" type="button" class="btn-last">
                   <span>尾页</span>
                 </button>
-              </el-pagination>
+              </el-pagination> 
             </div>
           </div>
   
