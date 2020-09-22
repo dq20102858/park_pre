@@ -140,7 +140,8 @@
                   <div class="item">
                     <p>
                       产品列表
-                      <span>88%</span></p>
+                      <span>88%</span>
+                      </p>
                     <el-progress
                       :percentage="88"
                       :show-text="false"
